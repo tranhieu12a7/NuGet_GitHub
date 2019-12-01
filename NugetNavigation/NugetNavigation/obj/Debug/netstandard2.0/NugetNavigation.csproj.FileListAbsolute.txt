@@ -1,0 +1,9 @@
+D:\Source Nuget\NugetNavigation\NugetNavigation\bin\Debug\netstandard2.0\NugetNavigation.deps.json
+D:\Source Nuget\NugetNavigation\NugetNavigation\bin\Debug\netstandard2.0\NugetNavigation.dll
+D:\Source Nuget\NugetNavigation\NugetNavigation\bin\Debug\netstandard2.0\NugetNavigation.pdb
+D:\Source Nuget\NugetNavigation\NugetNavigation\obj\Debug\netstandard2.0\NugetNavigation.csprojAssemblyReference.cache
+D:\Source Nuget\NugetNavigation\NugetNavigation\obj\Debug\netstandard2.0\NugetNavigation.AssemblyInfoInputs.cache
+D:\Source Nuget\NugetNavigation\NugetNavigation\obj\Debug\netstandard2.0\NugetNavigation.AssemblyInfo.cs
+D:\Source Nuget\NugetNavigation\NugetNavigation\obj\Debug\netstandard2.0\NugetNavigation.dll
+D:\Source Nuget\NugetNavigation\NugetNavigation\obj\Debug\netstandard2.0\NugetNavigation.pdb
+D:\Source Nuget\NugetNavigation\NugetNavigation\obj\Debug\netstandard2.0\XamlC.stamp

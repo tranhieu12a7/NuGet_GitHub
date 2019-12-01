@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Xamarin.Android.Support.Design</id>
+    <version>26.1.0.1</version>
+    <title>Xamarin Android Support Library - Design</title>
+    <authors>Xamarin Inc.</authors>
+    <owners>Xamarin Inc.</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/xamarin/AndroidSupportComponents/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/xamarin/AndroidSupportComponents/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/xamarin/AndroidSupportComponents/master/icons/design_128x128.png</iconUrl>
+    <description>Design Android Support Library C# bindings for Xamarin</description>
+    <copyright>Copyright © Microsoft Corporation</copyright>
+    <dependencies>
+      <group targetFramework="MonoAndroid8.0">
+        <dependency id="Xamarin.Android.Support.v7.AppCompat" version="[26.1.0.1]" />
+        <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="[26.1.0.1]" />
+        <dependency id="Xamarin.Android.Support.Transition" version="[26.1.0.1]" />
+        <dependency id="Xamarin.Android.Support.Compat" version="[26.1.0.1]" />
+        <dependency id="Xamarin.Android.Support.Core.UI" version="[26.1.0.1]" />
+        <dependency id="Xamarin.Android.Support.Core.Utils" version="[26.1.0.1]" />
+        <dependency id="Xamarin.Android.Support.Fragment" version="[26.1.0.1]" />
+        <dependency id="Xamarin.Android.Support.Media.Compat" version="[26.1.0.1]" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

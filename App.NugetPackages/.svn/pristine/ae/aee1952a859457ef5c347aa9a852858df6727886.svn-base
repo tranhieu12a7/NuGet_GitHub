@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ProgressBarCustom.Control</id>
+    <version>1.0.7</version>
+    <authors>NguyenMaiTruongLoc</authors>
+    <owners>VietInfo(Team Mobile)</owners>
+    <license type="expression">Apache-2.0</license>
+    <iconUrl>http://demo.vietinfo.tech:9998/App.HocMon/website/uploads/App/AvatarPlugin.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ProgressBar Custom Renderer</description>
+    <releaseNotes>Create new nuget version 1.0.0</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>NMTL ProgressBar</tags>
+  </metadata>
+  <files>
+	<!--Core-->
+	<file src="src\ProgressBarCustom.Control\bin\Release\netstandard2.0\ProgressBarCustom.Control.dll" target="lib\netstandard2.0" />
+	<file src="src\ProgressBarCustom.Control\bin\Release\netstandard2.0\ProgressBarCustom.Control.pdb" target="lib\netstandard2.0" />
+	
+	<!--Android-->
+	<file src="src\ProgressBarCustom.Control\bin\Release\netstandard2.0\ProgressBarCustom.Control.dll" target="lib\MonoAndroid10" />
+	<file src="src\ProgressBarCustom.Control\bin\Release\netstandard2.0\ProgressBarCustom.Control.pdb" target="lib\MonoAndroid10" />
+	<file src="src\ProgressBarCustom.Control.Android\bin\Release\ProgressBarCustom.Control.Android.dll" target="lib\MonoAndroid10" />
+	<file src="src\ProgressBarCustom.Control.Android\bin\Release\ProgressBarCustom.Control.Android.pdb" target="lib\MonoAndroid10" />
+	<!--IOS-->
+	<file src="src\ProgressBarCustom.Control\bin\Release\netstandard2.0\ProgressBarCustom.Control.dll" target="lib\Xamarin.iOS10" />
+	<file src="src\ProgressBarCustom.Control\bin\Release\netstandard2.0\ProgressBarCustom.Control.pdb" target="lib\Xamarin.iOS10" />
+	<file src="src\ProgressBarCustom.Control.iOS\bin\Release\ProgressBarCustom.Control.iOS.dll" target="lib\Xamarin.iOS10" />
+	<file src="src\ProgressBarCustom.Control.iOS\bin\Release\ProgressBarCustom.Control.iOS.pdb" target="lib\Xamarin.iOS10" />
+  
+  </files>
+</package>

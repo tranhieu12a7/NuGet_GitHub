@@ -1,0 +1,6 @@
+D:\Source Nuget\NugetNavigation\NugetNavigation_iOS\bin\Debug\NugetNavigation_iOS.dll
+D:\Source Nuget\NugetNavigation\NugetNavigation_iOS\bin\Debug\NugetNavigation_iOS.pdb
+D:\Source Nuget\NugetNavigation\NugetNavigation_iOS\obj\Debug\optimized\
+D:\Source Nuget\NugetNavigation\NugetNavigation_iOS\obj\Debug\NugetNavigation_iOS.csprojAssemblyReference.cache
+D:\Source Nuget\NugetNavigation\NugetNavigation_iOS\obj\Debug\NugetNavigation_iOS.dll
+D:\Source Nuget\NugetNavigation\NugetNavigation_iOS\obj\Debug\NugetNavigation_iOS.pdb

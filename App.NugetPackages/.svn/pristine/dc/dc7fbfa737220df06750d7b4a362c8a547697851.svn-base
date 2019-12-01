@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coreProperties xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openxmlformats.org/package/2006/metadata/core-properties">
+  <dc:creator>Xamarin Inc.</dc:creator>
+  <dc:description>v4 Android Support Library C# bindings for Xamarin</dc:description>
+  <dc:identifier>Xamarin.Android.Support.v4</dc:identifier>
+  <version>26.1.0.1</version>
+  <keywords></keywords>
+  <lastModifiedBy>NuGet, Version=4.3.0.6, Culture=neutral, PublicKeyToken=31bf3856ad364e35;Unix 16.7.0.0;.NET Framework 4.5</lastModifiedBy>
+</coreProperties>

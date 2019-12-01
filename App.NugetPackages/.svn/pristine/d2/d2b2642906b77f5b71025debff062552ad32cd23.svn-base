@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SampleFileManager.MainPage">
+
+    <FlexLayout 
+        Direction="Column"
+        JustifyContent="SpaceAround"
+        AlignContent="Stretch">
+        <!-- Place new controls here -->
+        <Button 
+            Text="Download File"
+            Clicked="Button_Clicked"
+            />
+
+        <Button 
+            x:Name="pickFile" 
+            Clicked="PickFile_Clicked"
+            Text="Pick File"/>
+
+        <Button 
+            x:Name="pickVideo" 
+            Clicked="PickVideo_Clicked"
+            Text="Pick Video"/>
+        <Button 
+            Text="Upload File"
+            Clicked="Button_Clicked_1"
+            />
+        <Label 
+            HorizontalOptions="Center"
+            x:Name="lblProgress1"
+               />
+        <Label 
+            HorizontalOptions="Center"
+            x:Name="lblProgress2"
+               />
+        <Label 
+            HorizontalOptions="Center"
+            x:Name="lblData"
+               />
+    </FlexLayout>
+
+</ContentPage>

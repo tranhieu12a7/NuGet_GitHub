@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FileManager.Plugin</id>
+    <version>2.0.4</version>
+    <authors>NguyenMaiTruongLoc</authors>
+    <owners>VietInfo(Team Mobile)</owners>
+    <license type="expression">Apache-2.0</license>
+    <projectUrl>http://192.168.1.23:8080/svn/SmartSolutions/Source/Vi.GOV/trunk/DashBoard/iPad/App.NugetPackages/FileManager.Plugin</projectUrl>
+    <iconUrl>http://demo.vietinfo.tech:9998/App.HocMon/website/uploads/App/AvatarPlugin.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Download File, Upload File</description>
+    <releaseNotes>Download File, Upload File</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>MTL DownloadFile UploadFile</tags>
+    <dependencies>
+	</dependencies>
+  </metadata>
+  <files>
+	<file src="README.txt" target="" />
+	<!--Core-->
+	<file src="Src\FileManager.Plugin\bin\Release\netstandard2.0\FileManager.Plugin.dll" target="lib\netstandard2.0" />
+	<file src="Src\FileManager.Plugin\bin\Release\netstandard2.0\FileManager.Plugin.pdb" target="lib\netstandard2.0" />
+	<file src="Src\FileManager.Plugin.Abstractions\bin\Release\netstandard2.0\FileManager.Plugin.Abstractions.dll" target="lib\netstandard2.0" />
+	<file src="Src\FileManager.Plugin.Abstractions\bin\Release\netstandard2.0\FileManager.Plugin.Abstractions.pdb" target="lib\netstandard2.0" />
+	<!--Android-->
+	<file src="Src\FileManager.Plugin.Abstractions\bin\Release\netstandard2.0\FileManager.Plugin.Abstractions.dll" target="lib\MonoAndroid10" />
+	<file src="Src\FileManager.Plugin.Abstractions\bin\Release\netstandard2.0\FileManager.Plugin.Abstractions.pdb" target="lib\MonoAndroid10" />
+	<file src="Src\FileManager.Plugin.Android\bin\Release\FileManager.Plugin.dll" target="lib\MonoAndroid10" />
+	<file src="Src\FileManager.Plugin.Android\bin\Release\FileManager.Plugin.pdb" target="lib\MonoAndroid10" />
+	<!--IOS-->
+	<file src="Src\FileManager.Plugin.Abstractions\bin\Release\netstandard2.0\FileManager.Plugin.Abstractions.dll" target="lib\MonoTouch10" />
+	<file src="Src\FileManager.Plugin.Abstractions\bin\Release\netstandard2.0\FileManager.Plugin.Abstractions.dll" target="lib\Xamarin.iOS10" />
+	<file src="Src\FileManager.Plugin.iOS\bin\Release\FileManager.Plugin.dll" target="lib\MonoTouch10" />
+	<file src="Src\FileManager.Plugin.iOS\bin\Release\FileManager.Plugin.dll" target="lib\Xamarin.iOS10" />  
+	<file src="Src\FileManager.Plugin.Abstractions\bin\Release\netstandard2.0\FileManager.Plugin.Abstractions.pdb" target="lib\MonoTouch10" />
+	<file src="Src\FileManager.Plugin.Abstractions\bin\Release\netstandard2.0\FileManager.Plugin.Abstractions.pdb" target="lib\Xamarin.iOS10" />
+	<file src="Src\FileManager.Plugin.iOS\bin\Release\FileManager.Plugin.pdb" target="lib\MonoTouch10" />
+	<file src="Src\FileManager.Plugin.iOS\bin\Release\FileManager.Plugin.pdb" target="lib\Xamarin.iOS10" />
+  </files>
+</package>

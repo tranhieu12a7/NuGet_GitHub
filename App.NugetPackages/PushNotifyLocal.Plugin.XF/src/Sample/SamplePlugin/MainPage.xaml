@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SamplePlugin.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Entry 
+            Placeholder="Nhập id"
+            x:Name="entryID"
+            Keyboard="Numeric"
+            HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+            />
+        <Entry 
+            Placeholder="Nhập ngày"
+            x:Name="entryNgay"
+            Keyboard="Numeric"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"
+            />
+        <Entry 
+            Placeholder="Nhập giờ"
+            x:Name="entryGio"
+            Keyboard="Numeric"
+            HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+            />
+        <Entry 
+            Placeholder="Nhập phút"
+            x:Name="entryPhut"
+            Keyboard="Numeric"
+            HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+            />
+        <Button Text="Push" 
+               Clicked="Button_Clicked"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Button Text="Remove" 
+               Clicked="Button1_Clicked"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+
+</ContentPage>
