@@ -438,11 +438,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation_iOS\\NugetNavigation_iOS.csproj",
+      "projectUniqueName": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation_iOS\\NugetNavigation_iOS.csproj",
       "projectName": "NugetNavigation_iOS",
-      "projectPath": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation_iOS\\NugetNavigation_iOS.csproj",
+      "projectPath": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation_iOS\\NugetNavigation_iOS.csproj",
       "packagesPath": "C:\\Users\\tranh\\.nuget\\packages\\",
-      "outputPath": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation_iOS\\obj\\",
+      "outputPath": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation_iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -464,8 +464,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj": {
-              "projectPath": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj"
+            "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj": {
+              "projectPath": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj"
             }
           }
         }

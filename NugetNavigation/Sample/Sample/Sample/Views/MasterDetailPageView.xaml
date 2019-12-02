@@ -6,11 +6,7 @@
              mc:Ignorable="d"
              x:Class="Sample.Views.MasterDetailPageView">
     <MasterDetailPage.Master>
-        <ContentPage Title="">
-            <ContentPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource"
-                            iOS="ic_menu_white.png" />
-            </ContentPage.Icon>
+        <ContentPage Title=" ">
             <ContentPage.Content>
                 <StackLayout>
                     <Label Text=" Hello day la menu left cua hieu"/>

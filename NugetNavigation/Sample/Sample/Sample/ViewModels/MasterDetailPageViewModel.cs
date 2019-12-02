@@ -6,7 +6,7 @@ using NugetNavigation;
 
 namespace Sample.ViewModels
 {
-    class MasterDetailPageViewModel : ViewModelBase
+   public class MasterDetailPageViewModel : ViewModelBase
     {
         public MasterDetailPageViewModel()
         {

@@ -1,4 +1,5 @@
-﻿using NugetNavigation.Mvvm;
+﻿using Autofac;
+using NugetNavigation.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -13,8 +14,13 @@ namespace NugetNavigation
     public class NavigationService : INavigationService
     {
         protected Application CurrentApplication => Application.Current;
-
-
+        private static IContainer _container;
+        private static Assembly _assembly;
+        public static void Init(IContainer Container, Assembly assembly)
+        {
+            _container = Container;
+            _assembly = assembly;
+        }
 
         /// <summary>
         /// soucre lam moi
@@ -121,7 +127,7 @@ namespace NugetNavigation
             }
         }
 
-        public async Task NavigatedToPage(int index, List<Type> listPage, INavigationParameters parameters,
+        public async Task NavigatedToPage(int index, List< Type> listPage, INavigationParameters parameters,
             MasterDetailPage _masterDetailPage = null)
         {
             try
@@ -156,7 +162,7 @@ namespace NugetNavigation
 
         }
         private async void OnNavigation_NavigationPage(int index, Page navigationPage, List<Type> listPage, INavigationParameters parameters,
-            MasterDetailPage _masterDetailPage = null)
+           MasterDetailPage _masterDetailPage = null)
         {
             try
             {
@@ -166,27 +172,37 @@ namespace NugetNavigation
                     if (masterDetailPage.Detail is CustomNavigationPage customNavigation)
                         if (customNavigation.CurrentPage is TabbedPage tabbedPage)
                         {
-                            int pageChild = 0;
                             foreach (var itemPage in tabbedPage.Children.ToArray())
                             {
                                 if (itemPage.GetType().FullName == navigationPage.GetType().FullName.Replace("ViewModel", "View"))
                                 {
                                     tabbedPage.CurrentPage = itemPage;
-                                    pageChild = 1;
+                                    await NavigatedToPage(index + 1, listPage, parameters);
+                                    return;
                                 }
                             }
-                            if (pageChild == 0)
+                            if (listPage.Count >= 3)
                             {
-                                masterDetailPage.Detail = CreateCustomNavigationPage(navigationPage);
-                                CurrentApplication.MainPage = masterDetailPage;
-                                var aaa = CurrentApplication.MainPage as MasterDetailPage;
-                                aaa.IsPresented = false;
+                                if (index == listPage.Count - 1)
+                                {
+                                    var __page = BindingContext(navigationPage, parameters, listPage[index]);
+                                    await PushPage(__page);
+                                    await NavigatedToPage(index + 1, listPage, parameters);
+                                    await _OnNavigation(__page, parameters);
+                                    return;
+                                }
+                                await PushPage(navigationPage);
                                 await NavigatedToPage(index + 1, listPage, parameters);
-                                var page_ = BindingContext(navigationPage, parameters, listPage[index]);
-                                await _OnNavigation(page_, parameters);
+                                var _page = BindingContext(navigationPage, parameters, listPage[index]);
+                                await _OnNavigation(_page, parameters);
                             }
-                            else
-                                await NavigatedToPage(index + 1, listPage, parameters);
+                            masterDetailPage.Detail = CreateCustomNavigationPage(navigationPage);
+                            CurrentApplication.MainPage = masterDetailPage;
+                            var aaa = CurrentApplication.MainPage as MasterDetailPage;
+                            aaa.IsPresented = false;
+                            await NavigatedToPage(index + 1, listPage, parameters);
+                            var page_ = BindingContext(navigationPage, parameters, listPage[index]);
+                            await _OnNavigation(page_, parameters);
                         }
                         else if (customNavigation.CurrentPage.GetType().FullName != navigationPage.GetType().FullName)
                         {
@@ -195,6 +211,7 @@ namespace NugetNavigation
                             var page_ = BindingContext(navigationPage, parameters, listPage[index]);
                             await _OnNavigation(page_, parameters);
                         }
+
                 }
                 else
                 {
@@ -299,6 +316,7 @@ namespace NugetNavigation
             await _OnNavigation(page_, parameters);
         }
 
+
         public Type StrClassViewModelByType(string strClass)
         {
             Assembly asm = Assembly.GetExecutingAssembly();
@@ -329,11 +347,10 @@ namespace NugetNavigation
             try
             {
                 var NamePage = type.FullName.Replace("ViewModel", "View");
-                var aaa = ServiceLocator.Instance._containerBuilder.GetType();
-                var viewType = Type.GetType(NamePage);
-                return Activator.CreateInstance(aaa) as Page;
+                var aaa = _assembly.CreateInstance(NamePage);
+                return aaa as Page;
             }
-            catch (Exception)
+            catch (Exception xxxx)
             {
                 return null;
             }
@@ -360,13 +377,14 @@ namespace NugetNavigation
                 Type ClassViewModel;
                 if (viewModelType == null)
                 {
-                    ClassViewModel = Type.GetType(page?.GetType().FullName.Replace("View", "ViewModel"));
+                    var NamePage = page.GetType().FullName.Replace("View", "ViewModel");
+                    ClassViewModel = _assembly.GetType(NamePage);
                 }
                 else
                     ClassViewModel = viewModelType;
                 if (page != null)
                 {
-                    page.BindingContext = ServiceLocator.Instance.Resolve(ClassViewModel);
+                    page.BindingContext = _container.Resolve(ClassViewModel);
 
                     if (page is TabbedPage tabbedPage)
                     {

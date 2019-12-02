@@ -4,3 +4,12 @@ D:\Source Nuget\NugetNavigation\NugetNavigation_iOS\obj\Debug\optimized\
 D:\Source Nuget\NugetNavigation\NugetNavigation_iOS\obj\Debug\NugetNavigation_iOS.csprojAssemblyReference.cache
 D:\Source Nuget\NugetNavigation\NugetNavigation_iOS\obj\Debug\NugetNavigation_iOS.dll
 D:\Source Nuget\NugetNavigation\NugetNavigation_iOS\obj\Debug\NugetNavigation_iOS.pdb
+D:\NuGet_GitHub\NugetNavigation\NugetNavigation_iOS\bin\Debug\NugetNavigation_iOS.dll
+D:\NuGet_GitHub\NugetNavigation\NugetNavigation_iOS\bin\Debug\NugetNavigation_iOS.pdb
+D:\NuGet_GitHub\NugetNavigation\NugetNavigation_iOS\bin\Debug\NugetNavigation.dll
+D:\NuGet_GitHub\NugetNavigation\NugetNavigation_iOS\bin\Debug\NugetNavigation.pdb
+D:\NuGet_GitHub\NugetNavigation\NugetNavigation_iOS\obj\Debug\optimized\
+D:\NuGet_GitHub\NugetNavigation\NugetNavigation_iOS\obj\Debug\NugetNavigation_iOS.csprojAssemblyReference.cache
+D:\NuGet_GitHub\NugetNavigation\NugetNavigation_iOS\obj\Debug\NugetNavigation_iOS.csproj.CopyComplete
+D:\NuGet_GitHub\NugetNavigation\NugetNavigation_iOS\obj\Debug\NugetNavigation_iOS.dll
+D:\NuGet_GitHub\NugetNavigation\NugetNavigation_iOS\obj\Debug\NugetNavigation_iOS.pdb

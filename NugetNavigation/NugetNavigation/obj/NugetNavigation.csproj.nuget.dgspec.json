@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj": {}
+    "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj": {}
   },
   "projects": {
-    "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj": {
+    "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj",
+        "projectUniqueName": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj",
         "projectName": "NugetNavigation",
-        "projectPath": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj",
+        "projectPath": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj",
         "packagesPath": "C:\\Users\\tranh\\.nuget\\packages\\",
-        "outputPath": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\obj\\",
+        "outputPath": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

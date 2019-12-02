@@ -13,9 +13,12 @@ namespace Sample
         {
             InitializeComponent();
 
+          
+            //ServiceLocator.Instance.assembly2 = System.Reflection.Assembly.GetExecutingAssembly();//GetType().Assembly;
             //MainPage = new MainPage();
             ServiceLocator.Instance.RegisterViewModels();
             ServiceLocator.Instance.Build();
+            NavigationService.Init(ServiceLocator.Instance.Container, System.Reflection.Assembly.GetExecutingAssembly());
 
             initNavigationPage();
 
@@ -26,7 +29,8 @@ namespace Sample
         {
             await ServiceLocator.Instance.Resolve<INavigationService>().NavigateToAsync(new List<Type>()
                  {
-                   typeof(MasterDetailPageViewModel),typeof(Page1ViewModel)
+                //typeof(Page1ViewModel)
+                   typeof(MasterDetailPageViewModel),typeof(TabbedPageViewModel),typeof(Page1ViewModel)
                   });
 
         }

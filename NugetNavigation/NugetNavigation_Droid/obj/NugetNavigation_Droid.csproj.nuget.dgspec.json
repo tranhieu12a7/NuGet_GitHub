@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Source Nuget\\NugetNavigation\\NugetNavigation_Droid\\NugetNavigation_Droid.csproj": {}
+    "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation_Droid\\NugetNavigation_Droid.csproj": {}
   },
   "projects": {
-    "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj": {
+    "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj",
+        "projectUniqueName": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj",
         "projectName": "NugetNavigation",
-        "projectPath": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj",
+        "projectPath": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj",
         "packagesPath": "C:\\Users\\tranh\\.nuget\\packages\\",
-        "outputPath": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\obj\\",
+        "outputPath": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -73,14 +73,14 @@
         }
       }
     },
-    "D:\\Source Nuget\\NugetNavigation\\NugetNavigation_Droid\\NugetNavigation_Droid.csproj": {
+    "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation_Droid\\NugetNavigation_Droid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation_Droid\\NugetNavigation_Droid.csproj",
+        "projectUniqueName": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation_Droid\\NugetNavigation_Droid.csproj",
         "projectName": "NugetNavigation_Droid",
-        "projectPath": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation_Droid\\NugetNavigation_Droid.csproj",
+        "projectPath": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation_Droid\\NugetNavigation_Droid.csproj",
         "packagesPath": "C:\\Users\\tranh\\.nuget\\packages\\",
-        "outputPath": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation_Droid\\obj\\",
+        "outputPath": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation_Droid\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -102,8 +102,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj": {
-                "projectPath": "D:\\Source Nuget\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj"
+              "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj": {
+                "projectPath": "D:\\NuGet_GitHub\\NugetNavigation\\NugetNavigation\\NugetNavigation.csproj"
               }
             }
           }

@@ -1,5 +1,6 @@
 ﻿using NugetNavigation;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -39,6 +40,7 @@ namespace NugetNavigation.Mvvm
         public abstract Task OnNavigationAsync(INavigationParameters parameters, NavigationType navigationType);
         public abstract void Destroy();
 
+        
         public event PropertyChangedEventHandler PropertyChanged;
     }
 }
